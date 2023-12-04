@@ -14,6 +14,7 @@
 		CB41F4222B1E099B00E41876 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB41F4202B1E099B00E41876 /* LaunchScreen.storyboard */; };
 		CB70CB642B1E1058005946BD /* SegmentImage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB70CB632B1E1058005946BD /* SegmentImage.storyboard */; };
 		CB70CB662B1E1062005946BD /* SegmentImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB70CB652B1E1062005946BD /* SegmentImageViewController.swift */; };
+		CB70CB682B1E15BF005946BD /* SegmentImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB70CB672B1E15BF005946BD /* SegmentImageViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		CB41F4232B1E099B00E41876 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB70CB632B1E1058005946BD /* SegmentImage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SegmentImage.storyboard; sourceTree = "<group>"; };
 		CB70CB652B1E1062005946BD /* SegmentImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentImageViewController.swift; sourceTree = "<group>"; };
+		CB70CB672B1E15BF005946BD /* SegmentImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentImageViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 			children = (
 				CB70CB632B1E1058005946BD /* SegmentImage.storyboard */,
 				CB70CB652B1E1062005946BD /* SegmentImageViewController.swift */,
+				CB70CB672B1E15BF005946BD /* SegmentImageViewModel.swift */,
 			);
 			path = SegmentImage;
 			sourceTree = "<group>";
@@ -166,6 +169,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB70CB682B1E15BF005946BD /* SegmentImageViewModel.swift in Sources */,
 				CB70CB662B1E1062005946BD /* SegmentImageViewController.swift in Sources */,
 				CB41F4162B1E099800E41876 /* AppDelegate.swift in Sources */,
 				CB41F4182B1E099800E41876 /* SceneDelegate.swift in Sources */,

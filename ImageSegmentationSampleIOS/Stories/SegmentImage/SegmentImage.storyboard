@@ -14,13 +14,32 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coffee_example" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YKt-5a-yKt">
+                                <rect key="frame" x="0.0" y="242" width="393" height="393"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="YKt-5a-yKt" secondAttribute="height" id="Kl4-Vd-3Pr"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="YKt-5a-yKt" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="hdl-VT-oVH"/>
+                            <constraint firstItem="YKt-5a-yKt" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="kGg-Bz-ecY"/>
+                            <constraint firstItem="YKt-5a-yKt" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="lMP-kN-ani"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="segmentImageView" destination="YKt-5a-yKt" id="MxN-0b-zvo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="126" y="-2"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="coffee_example" width="800" height="530"/>
+    </resources>
 </document>
