@@ -21,13 +21,23 @@
                                     <constraint firstAttribute="width" secondItem="YKt-5a-yKt" secondAttribute="height" id="Kl4-Vd-3Pr"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d0d-Ad-4Pb">
+                                <rect key="frame" x="106.33333333333333" y="653" width="180.33333333333337" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Remove background"/>
+                                <connections>
+                                    <action selector="didPressRemoveBackground:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="yvv-Cm-q5G"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="d0d-Ad-4Pb" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Cdj-B2-HBo"/>
                             <constraint firstItem="YKt-5a-yKt" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="hdl-VT-oVH"/>
                             <constraint firstItem="YKt-5a-yKt" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="kGg-Bz-ecY"/>
                             <constraint firstItem="YKt-5a-yKt" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="lMP-kN-ani"/>
+                            <constraint firstItem="d0d-Ad-4Pb" firstAttribute="top" secondItem="YKt-5a-yKt" secondAttribute="bottom" constant="18" id="mXi-u1-uWu"/>
                         </constraints>
                     </view>
                     <connections>

@@ -7,6 +7,7 @@
 
 import UIKit
 import PhotosUI
+import CoreImage.CIFilterBuiltins
 
 class SegmentImageViewController: UIViewController {
     
@@ -34,6 +35,24 @@ class SegmentImageViewController: UIViewController {
         navigationItem.largeTitleDisplayMode = .always
     }
     
+    @IBAction func didPressRemoveBackground(_ sender: UIButton) {
+        guard 
+            let inputImage = segmentImageView.image,
+            let inputCGImage = inputImage.cgImage
+        else {
+            return
+        }
+        
+        let resultMask = viewModel.subjectMask(fromImage: CIImage(cgImage: inputCGImage), atPoint: .zero)
+        let inputCIImage = CIImage(cgImage: inputCGImage)
+        
+        let filter = CIFilter.blendWithMask()
+        filter.inputImage = inputCIImage
+        filter.backgroundImage = CIImage(color: CIColor.clear).cropped(to: inputCIImage.extent)
+        filter.maskImage = resultMask
+        
+        segmentImageView.image = UIImage(cgImage: CGImage.render(ciImage: filter.outputImage!))
+    }
 }
 
 extension SegmentImageViewController: PHPickerViewControllerDelegate {

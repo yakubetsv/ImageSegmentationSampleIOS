@@ -15,6 +15,7 @@
 		CB70CB642B1E1058005946BD /* SegmentImage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB70CB632B1E1058005946BD /* SegmentImage.storyboard */; };
 		CB70CB662B1E1062005946BD /* SegmentImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB70CB652B1E1062005946BD /* SegmentImageViewController.swift */; };
 		CB70CB682B1E15BF005946BD /* SegmentImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB70CB672B1E15BF005946BD /* SegmentImageViewModel.swift */; };
+		CB70CB6B2B1E47DD005946BD /* CGImage+render.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB70CB6A2B1E47DD005946BD /* CGImage+render.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		CB70CB632B1E1058005946BD /* SegmentImage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SegmentImage.storyboard; sourceTree = "<group>"; };
 		CB70CB652B1E1062005946BD /* SegmentImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentImageViewController.swift; sourceTree = "<group>"; };
 		CB70CB672B1E15BF005946BD /* SegmentImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentImageViewModel.swift; sourceTree = "<group>"; };
+		CB70CB6A2B1E47DD005946BD /* CGImage+render.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGImage+render.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				CB70CB602B1E0F99005946BD /* Stories */,
+				CB70CB692B1E47C9005946BD /* Helpers */,
 				CB70CB622B1E0FC8005946BD /* Resources */,
 			);
 			path = ImageSegmentationSampleIOS;
@@ -95,6 +98,14 @@
 				CB41F4232B1E099B00E41876 /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		CB70CB692B1E47C9005946BD /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CB70CB6A2B1E47DD005946BD /* CGImage+render.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB70CB682B1E15BF005946BD /* SegmentImageViewModel.swift in Sources */,
+				CB70CB6B2B1E47DD005946BD /* CGImage+render.swift in Sources */,
 				CB70CB662B1E1062005946BD /* SegmentImageViewController.swift in Sources */,
 				CB41F4162B1E099800E41876 /* AppDelegate.swift in Sources */,
 				CB41F4182B1E099800E41876 /* SceneDelegate.swift in Sources */,
