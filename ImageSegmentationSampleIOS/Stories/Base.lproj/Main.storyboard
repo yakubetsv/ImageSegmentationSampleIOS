@@ -3,6 +3,8 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,22 +20,62 @@
                         </textAttributes>
                     </navigationBar>
                     <connections>
-                        <segue destination="GRm-eN-lqy" kind="relationship" relationship="rootViewController" id="fXs-mu-it1"/>
+                        <segue destination="lHf-qA-0n3" kind="relationship" relationship="rootViewController" id="ngW-fj-31m"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q9f-lr-RGb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-303" y="-5"/>
         </scene>
-        <!--SegmentImage-->
-        <scene sceneID="WYC-9V-W5B">
+        <!--Root View Controller-->
+        <scene sceneID="Wyl-V8-D6c">
             <objects>
-                <viewControllerPlaceholder storyboardName="SegmentImage" id="GRm-eN-lqy" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="scq-Li-uEo"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iEa-Ss-vdD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="lHf-qA-0n3" customClass="RootViewController" customModule="ImageSegmentationSampleIOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NPN-7e-nVM">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="LDQ-Ap-GDL">
+                                <rect key="frame" x="8" y="388.33333333333331" width="377" height="75.666666666666686"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3a8-jC-ENi">
+                                        <rect key="frame" x="0.0" y="0.0" width="377" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="ImageSegmentation"/>
+                                        <connections>
+                                            <action selector="imageSegmentationDidPress:" destination="lHf-qA-0n3" eventType="touchUpInside" id="a7f-PY-S8V"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ThV-xk-THy">
+                                        <rect key="frame" x="0.0" y="41.333333333333371" width="377" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="CareLabels"/>
+                                        <connections>
+                                            <action selector="careLabelsDidPress:" destination="lHf-qA-0n3" eventType="touchUpInside" id="TcY-pA-vFT"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hUx-Oc-IZR"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LDQ-Ap-GDL" firstAttribute="centerY" secondItem="NPN-7e-nVM" secondAttribute="centerY" id="38w-1e-mgm"/>
+                            <constraint firstItem="LDQ-Ap-GDL" firstAttribute="centerX" secondItem="NPN-7e-nVM" secondAttribute="centerX" id="BsL-fD-BE4"/>
+                            <constraint firstItem="hUx-Oc-IZR" firstAttribute="trailing" secondItem="LDQ-Ap-GDL" secondAttribute="trailing" constant="8" id="qlF-ob-6Vp"/>
+                            <constraint firstItem="LDQ-Ap-GDL" firstAttribute="leading" secondItem="hUx-Oc-IZR" secondAttribute="leading" constant="8" id="vVB-9c-j2U"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="EYz-Os-hGa"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K2V-rR-jqE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="367" y="-6"/>
+            <point key="canvasLocation" x="726" y="-6"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

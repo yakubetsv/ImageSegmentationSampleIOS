@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB05110A2B23730C00B20E04 /* CareLabels.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB0511092B23730C00B20E04 /* CareLabels.storyboard */; };
+		CB05110C2B23731700B20E04 /* CareLabelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB05110B2B23731700B20E04 /* CareLabelsViewController.swift */; };
+		CB05110E2B2373A600B20E04 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB05110D2B2373A600B20E04 /* RootViewController.swift */; };
 		CB41F4162B1E099800E41876 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB41F4152B1E099800E41876 /* AppDelegate.swift */; };
 		CB41F4182B1E099800E41876 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB41F4172B1E099800E41876 /* SceneDelegate.swift */; };
 		CB41F41D2B1E099800E41876 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB41F41B2B1E099800E41876 /* Main.storyboard */; };
@@ -16,9 +19,14 @@
 		CB70CB662B1E1062005946BD /* SegmentImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB70CB652B1E1062005946BD /* SegmentImageViewController.swift */; };
 		CB70CB682B1E15BF005946BD /* SegmentImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB70CB672B1E15BF005946BD /* SegmentImageViewModel.swift */; };
 		CB70CB6B2B1E47DD005946BD /* CGImage+render.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB70CB6A2B1E47DD005946BD /* CGImage+render.swift */; };
+		CBCCA49D2B23747E006B9AD0 /* ViewController+initial.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCCA49C2B23747E006B9AD0 /* ViewController+initial.swift */; };
+		CBCCA4A02B23751E006B9AD0 /* CareLabels.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = CBCCA49F2B23751E006B9AD0 /* CareLabels.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CB0511092B23730C00B20E04 /* CareLabels.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CareLabels.storyboard; sourceTree = "<group>"; };
+		CB05110B2B23731700B20E04 /* CareLabelsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareLabelsViewController.swift; sourceTree = "<group>"; };
+		CB05110D2B2373A600B20E04 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		CB41F4122B1E099800E41876 /* ImageSegmentationSampleIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageSegmentationSampleIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB41F4152B1E099800E41876 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB41F4172B1E099800E41876 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +38,8 @@
 		CB70CB652B1E1062005946BD /* SegmentImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentImageViewController.swift; sourceTree = "<group>"; };
 		CB70CB672B1E15BF005946BD /* SegmentImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentImageViewModel.swift; sourceTree = "<group>"; };
 		CB70CB6A2B1E47DD005946BD /* CGImage+render.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGImage+render.swift"; sourceTree = "<group>"; };
+		CBCCA49C2B23747E006B9AD0 /* ViewController+initial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+initial.swift"; sourceTree = "<group>"; };
+		CBCCA49F2B23751E006B9AD0 /* CareLabels.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = CareLabels.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +53,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB0511082B2372EC00B20E04 /* CareLabels */ = {
+			isa = PBXGroup;
+			children = (
+				CB0511092B23730C00B20E04 /* CareLabels.storyboard */,
+				CB05110B2B23731700B20E04 /* CareLabelsViewController.swift */,
+			);
+			path = CareLabels;
+			sourceTree = "<group>";
+		};
+		CB05110F2B23745300B20E04 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CBCCA49C2B23747E006B9AD0 /* ViewController+initial.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		CB41F4092B1E099800E41876 = {
 			isa = PBXGroup;
 			children = (
@@ -62,8 +89,10 @@
 		CB41F4142B1E099800E41876 /* ImageSegmentationSampleIOS */ = {
 			isa = PBXGroup;
 			children = (
+				CBCCA49E2B2374B8006B9AD0 /* ML */,
 				CB70CB602B1E0F99005946BD /* Stories */,
 				CB70CB692B1E47C9005946BD /* Helpers */,
+				CB05110F2B23745300B20E04 /* Extensions */,
 				CB70CB622B1E0FC8005946BD /* Resources */,
 			);
 			path = ImageSegmentationSampleIOS;
@@ -73,7 +102,9 @@
 			isa = PBXGroup;
 			children = (
 				CB41F41B2B1E099800E41876 /* Main.storyboard */,
+				CB05110D2B2373A600B20E04 /* RootViewController.swift */,
 				CB70CB612B1E0FAA005946BD /* SegmentImage */,
+				CB0511082B2372EC00B20E04 /* CareLabels */,
 			);
 			path = Stories;
 			sourceTree = "<group>";
@@ -106,6 +137,14 @@
 				CB70CB6A2B1E47DD005946BD /* CGImage+render.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		CBCCA49E2B2374B8006B9AD0 /* ML */ = {
+			isa = PBXGroup;
+			children = (
+				CBCCA49F2B23751E006B9AD0 /* CareLabels.mlmodel */,
+			);
+			path = ML;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +208,7 @@
 				CB70CB642B1E1058005946BD /* SegmentImage.storyboard in Resources */,
 				CB41F4222B1E099B00E41876 /* LaunchScreen.storyboard in Resources */,
 				CB41F41F2B1E099B00E41876 /* Assets.xcassets in Resources */,
+				CB05110A2B23730C00B20E04 /* CareLabels.storyboard in Resources */,
 				CB41F41D2B1E099800E41876 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -182,7 +222,11 @@
 			files = (
 				CB70CB682B1E15BF005946BD /* SegmentImageViewModel.swift in Sources */,
 				CB70CB6B2B1E47DD005946BD /* CGImage+render.swift in Sources */,
+				CB05110C2B23731700B20E04 /* CareLabelsViewController.swift in Sources */,
+				CBCCA49D2B23747E006B9AD0 /* ViewController+initial.swift in Sources */,
+				CB05110E2B2373A600B20E04 /* RootViewController.swift in Sources */,
 				CB70CB662B1E1062005946BD /* SegmentImageViewController.swift in Sources */,
+				CBCCA4A02B23751E006B9AD0 /* CareLabels.mlmodel in Sources */,
 				CB41F4162B1E099800E41876 /* AppDelegate.swift in Sources */,
 				CB41F4182B1E099800E41876 /* SceneDelegate.swift in Sources */,
 			);
